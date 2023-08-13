@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;}
+
+body{
+  background: url('bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.header{
+  background: transparent;
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .2s;
+}
+
+.nav-bar a {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 40px;
+  color: #fff;
+  transition: all .2s;
+}
+
+a:hover{
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.7);
+}
+a:active{
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.nav-bar a::before{ 
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: all .3s;
+}
+
+.nav-bar a:hover::before{
+  width: 100%;
+} 
+
+.nav-bar .home {
+  color: #e0c6e1;
+}
+
+.header .logo:hover{
+  color: #e0c6e1;
+}
+
+.container{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.line{
+  color: white;
+  font-size: 100px;
+  font-weight: 600;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.7);
+
+}
+
+.join{
+  position: absolute;
+  margin-top: 300px;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 100px;
+  font-weight: 500;
+  font-size: 16x;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.7);
+  transition: all .2s;
+  cursor: pointer;
+  
+}
+
+.join:hover{ 
+  background: rgb(254,150,249);
+  background: linear-gradient(10deg, rgba(254,150,249,1) 33%, rgba(147,237,255,1) 100%);
+  color: #fff;
+  text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.7);
+}
+
+.join:active{
+  opacity: 0.7;
+}
